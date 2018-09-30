@@ -59,6 +59,7 @@
 		4BB713091DE8237600185734 /* pay_openssl_crypto_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pay_openssl_crypto_util.cpp; sourceTree = "<group>"; };
 		4BB7130A1DE8237600185734 /* rsa_pss_sha256.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsa_pss_sha256.cpp; sourceTree = "<group>"; };
 		4BB7130B1DE8237600185734 /* test_rsa_pss_sha256.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_rsa_pss_sha256.cpp; sourceTree = "<group>"; };
+		50F3EA532160AA0800F32BFD /* libopenssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopenssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D906DC1CC7BACF0076CBD9 /* aes_crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_crypt.c; sourceTree = "<group>"; };
 		55D906DF1CC7BACF0076CBD9 /* ecdh_crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecdh_crypt.c; sourceTree = "<group>"; };
 		55D906E01CC7BACF0076CBD9 /* ecdsa_verify.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecdsa_verify.c; sourceTree = "<group>"; };
@@ -135,7 +136,6 @@
 		55D9072D1CC7BACF0076CBD9 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
 		55D9072E1CC7BACF0076CBD9 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
 		55D9072F1CC7BACF0076CBD9 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
-		55D9C0821CC7B1C90076CBD9 /* libopenssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libopenssl.a; path = /Users/elviswu/elvis_workspace/mmnet/mars/mars/openssl/build/Debug/libopenssl.a; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +160,7 @@
 				55D906E41CC7BACF0076CBD9 /* export_include */,
 				55D906ED1CC7BACF0076CBD9 /* include */,
 				3D9C4F761EAF471D002346D5 /* Frameworks */,
+				50F3EA532160AA0800F32BFD /* libopenssl.a */,
 			);
 			sourceTree = "<group>";
 		};
@@ -322,7 +323,7 @@
 			);
 			name = openssl;
 			productName = PublicComponent;
-			productReference = 55D9C0821CC7B1C90076CBD9 /* libopenssl.a */;
+			productReference = 50F3EA532160AA0800F32BFD /* libopenssl.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -401,6 +402,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.10;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -425,6 +427,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx10.10;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -586,7 +589,6 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -749,7 +751,6 @@
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = all;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};

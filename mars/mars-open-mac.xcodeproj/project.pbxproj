@@ -16,11 +16,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		557B1F301CC7BF110076B9EE /* PBXContainerItemProxy */ = {
+		50F3EA462160A9D100F32BFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 557B1F2C1CC7BF110076B9EE /* openssl-mac.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 55D9C0821CC7B1C90076CBD9;
+			remoteGlobalIDString = 50F3EA452160A9C500F32BFD;
 			remoteInfo = openssl;
 		};
 		557B1F361CC7BF1B0076B9EE /* PBXContainerItemProxy */ = {
@@ -193,7 +193,7 @@
 		557B1F2D1CC7BF110076B9EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				557B1F311CC7BF110076B9EE /* libopenssl.a */,
+				50F3EA472160A9D100F32BFD /* libopenssl.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -331,11 +331,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		557B1F311CC7BF110076B9EE /* libopenssl.a */ = {
+		50F3EA472160A9D100F32BFD /* libopenssl.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libopenssl.a;
-			remoteRef = 557B1F301CC7BF110076B9EE /* PBXContainerItemProxy */;
+			remoteRef = 50F3EA462160A9D100F32BFD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		557B1F371CC7BF1B0076B9EE /* libapp.a */ = {
@@ -475,6 +475,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.10;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -499,6 +500,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx10.10;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -651,7 +653,6 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -805,7 +806,6 @@
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = all;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};

@@ -965,6 +965,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.10;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -989,6 +990,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx10.10;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -1154,7 +1156,6 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -1321,7 +1322,6 @@
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = all;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
